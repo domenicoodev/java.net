@@ -1,0 +1,55 @@
+LETTURA:
+• La classe astratta InputStream tramite il
+metodo read() legge un byte alla volta.
+
+• La classe astratta Reader tramite il metodo
+read() legge un carattere alla volta.
+
+• La classe concreta InputStreamReader
+permette di convertire un flusso di input
+binario in un flusso di input di caratteri
+
+• La classe concreta BufferedReader tramite
+readLine() legge un carattere alla volta fino ad
+ottenere una linea.
+
+
+SCRITTURA:
+• La classe astratta OutputStream tramite il
+metodo write() scrive un byte alla volta.
+
+• La classe astratta Writer tramite il metodo
+write() scrive un carattere alla volta.
+
+• La classe concreta OutputStreamWriter
+permette di convertire un flusso di output di
+caratteri in un flusso di output binario.
+
+• La classe concreta PrintWriter tramite println()
+scrive numeri e stringhe in singoli caratteri.
+
+
+InputStream getInputStream(): restituisce lo stream di input del socket;
+questo stream è utilizzato per leggere i dati provenienti dal socket.
+
+OutputStream getOutputStream(): restituisce lo stream di output del
+socket; questo stream è utilizzato per scrivere dati nel socket.
+
+void setSoTimeout(int timeout): imposta il timeout per operazioni di lettura
+dal socket; se il tempo specificato trascorre genera una
+InterruptedIOException.
+
+String toString(): restituisce una rappresentazione del socket del tipo
+“Socket[addr=hostname/192.168.90.82,port=3575,localport=1026]”
+
+ServerSocket(int port): crea un server socket che controlla una porta.
+
+Socket accept(): rimane in attesa di una connessione, e restituisce un
+socket tramite il quale si effettua la comunicazione.
+
+void close(): chiude il server socket.
+
+InetAddress getInetAddress(): restituisce l’indirizzo locale di questo server
+socket.
+
+int getLocalPort(): restituisce la porta locale di questo server socket.

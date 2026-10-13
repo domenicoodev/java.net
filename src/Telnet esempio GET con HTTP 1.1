@@ -1,0 +1,30 @@
+Apro il terminale
+Scrivo telnet example.com 80
+
+Appena mi collego incollo questo e premo invio
+(Se sono abbastanza veloce posso anche scrivere a mano una riga alla volta
+e premere invio per andare a capo)
+*NOTA LA RIGA VUOTA ALLA FINE E' IMPORTANTISSIMA*
+"GET / HTTP/1.1
+Host: example.com"
+Poi premo di nuovo invio per la riga vuota
+
+RISPOSTA:
+HTTP/1.1 200 OK
+Date: Thu, 08 Oct 2026 15:36:41 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: cloudflare
+Last-Modified: Thu, 08 Oct 2026 00:09:04 GMT
+Allow: GET, HEAD
+Accept-Ranges: bytes
+Age: 12286
+cf-cache-status: HIT
+CF-RAY: a47638f25b4d0e1d-MXP
+alt-svc: h3=":443"; ma=86400
+
+241
+<!doctype html><html lang=en><head><meta charset=utf-8><link rel=icon href=data:,><meta name=viewport content="width=device-width,initial-scale=1"><title>Example Domain</title><style>html{color-scheme:light dark;background:light-dark(#eee,#222)}body{font:16px/1.6 system-ui,sans-serif;max-width:26em;margin:auto;padding:25vh 2em 2em;text-align:center}</style></head><body><p>This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.</p><script src=/s.js></script></body></html>
+
+0

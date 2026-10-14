@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Connessione a TimeServer/Connessione a TimeServer.iml" filepath="$PROJECT_DIR$/Connessione a TimeServer/Connessione a TimeServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Download Pagina HTML/Download Pagina HTML.iml" filepath="$PROJECT_DIR$/Download Pagina HTML/Download Pagina HTML.iml" />
       <module fileurl="file://$PROJECT_DIR$/EchoServer/EchoServer.iml" filepath="$PROJECT_DIR$/EchoServer/EchoServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Http Server/Http Server.iml" filepath="$PROJECT_DIR$/Http Server/Http Server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/HTTPWelcome/HttpWelcome.iml" filepath="$PROJECT_DIR$/HTTPWelcome/HttpWelcome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HttpWelcome/HttpWelcome.iml" filepath="$PROJECT_DIR$/HttpWelcome/HttpWelcome.iml" />
       <module fileurl="file://$PROJECT_DIR$/Internet Computing.iml" filepath="$PROJECT_DIR$/Internet Computing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Multicast TimeServer/Multicast TimeServer.iml" filepath="$PROJECT_DIR$/Multicast TimeServer/Multicast TimeServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Recupero Contenuto Sito Web/Recupero Contenuto Sito Web.iml" filepath="$PROJECT_DIR$/Recupero Contenuto Sito Web/Recupero Contenuto Sito Web.iml" />
       <module fileurl="file://$PROJECT_DIR$/Socket Opener Test/Socket Opener Test.iml" filepath="$PROJECT_DIR$/Socket Opener Test/Socket Opener Test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TimeServer/TimeServer.iml" filepath="$PROJECT_DIR$/TimeServer/TimeServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TimeServer UDP/TimeServer UDP.iml" filepath="$PROJECT_DIR$/TimeServer UDP/TimeServer UDP.iml" />
       <module fileurl="file://$PROJECT_DIR$/TrasmissioneOggettiSerializzati/TrasmissioneOggettiSerializzati.iml" filepath="$PROJECT_DIR$/TrasmissioneOggettiSerializzati/TrasmissioneOggettiSerializzati.iml" />
+      <module fileurl="file://$PROJECT_DIR$/URLConnection Test/URLConnection Test.iml" filepath="$PROJECT_DIR$/URLConnection Test/URLConnection Test.iml" />
     </modules>
   </component>
 </project>

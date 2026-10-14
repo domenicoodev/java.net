@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Download Pagina HTML/Download Pagina HTML.iml" filepath="$PROJECT_DIR$/Download Pagina HTML/Download Pagina HTML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EchoServer/EchoServer.iml" filepath="$PROJECT_DIR$/EchoServer/EchoServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HTTPWelcome/HTTPWelcome.iml" filepath="$PROJECT_DIR$/HTTPWelcome/HTTPWelcome.iml" />
       <module fileurl="file://$PROJECT_DIR$/Internet Computing.iml" filepath="$PROJECT_DIR$/Internet Computing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Socket Opener Test/Socket Opener Test.iml" filepath="$PROJECT_DIR$/Socket Opener Test/Socket Opener Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TimeServer/TimeServer.iml" filepath="$PROJECT_DIR$/TimeServer/TimeServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/TrasmissioneOggettiSerializzati/TrasmissioneOggettiSerializzati.iml" filepath="$PROJECT_DIR$/TrasmissioneOggettiSerializzati/TrasmissioneOggettiSerializzati.iml" />
     </modules>
   </component>

@@ -1,0 +1,51 @@
+Realizza un Web Service per la gestione di informazioni su aziende produttrici di marmellate. Il servizio consente di
+gestire più aziende, ognuna delle quali produce diversi tipi di marmellate con caratteristiche specifiche. In
+particolare, il servizio espone:
+
+1. Un metodo che, dato l'id dell'azienda e un tipo di marmellata, permette di salvare l'importo incassato per la
+vendita di quel tipo di marmellata.
+
+
+2. Un metodo che, dato l'ID di un'azienda, restituisce un oggetto con le seguenti informazioni:
+a. il tipo di marmellata che ha generato il maggiore incasso totale
+b. l'importo totale incassato per quel tipo di marmellata
+
+Predisporre una struttura dati lato server per memorizzare queste informazioni.
+come specificato nel file WSDL allegato. Si implementi in Java una classe che implementa il servizio.
+
+
+Allegato all’esercizio
+<wsdl:types>
+ <schema targetNamespace="http://aziende">
+ <complexType name="IncassoProdotto">
+ <sequence>
+ <element name="tipoMarmellata" type="xsd:string"/>
+ <element name="importo" type="xsd:double"/>
+ </sequence>
+ </complexType>
+ </schema>
+</wsdl:types>
+<wsdl:message name="VenditaRequest">
+ <wsdl:part name="idAzienda" type="xsd:integer"/>
+ <wsdl:part name="tipoMarmellata" type="xsd:string"/>
+ <wsdl:part name="importo" type="xsd:double"/>
+</wsdl:message>
+<wsdl:message name="VenditaResponse">
+</wsdl:message>
+<wsdl:message name="MaggioreIncassoRequest">
+ <wsdl:part name="idAzienda" type="xsd:integer"/>
+</wsdl:message>
+<wsdl:message name="MaggioreIncassoResponse">
+ <wsdl:part name="incasso" type="impl:IncassoProdotto"/>
+</wsdl:message>
+<wsdl:portType name="AziendaService">
+ <wsdl:operation name="Vendita" parameterOrder="idAzienda tipoMarmellata importo">
+ <wsdl:input message="impl:VenditaRequest" name="VenditaRequest" />
+ <wsdl:output message="impl:VenditaResponse" name="VenditaResponse" />
+ </wsdl:operation>
+ <wsdl:operation name="MaggioreIncasso" parameterOrder="idAzienda">
+ <wsdl:input message="impl:MaggioreIncassoRequest" name="MaggioreIncassoRequest" />
+ <wsdl:output message="impl:MaggioreIncassoResponse" name="MaggioreIncassoResponse" />
+ </wsdl:operation>
+</wsdl:portType>
+<wsdl:binding ...> <!-- Elementi di binding configurati come necessari --></wsdl:binding>

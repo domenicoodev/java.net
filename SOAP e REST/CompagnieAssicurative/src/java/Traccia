@@ -1,0 +1,39 @@
+Realizza un Web Service RESTful per la gestione di informazioni sulle polizze assicurative offerte da diverse compagnie. Ogni
+compagnia è identificata da un codice numerico univoco ed è descritta tramite nome, sede e un elenco di polizze. Ogni polizza
+è identificata da un codice testuale univoco e include informazioni su premio annuo e copertura massima. Il servizio espone
+due endpoint: uno che, dato il codice di una polizza, restituisce la compagnia che la offre al premio annuo più basso (in caso di
+parità, si considera prima la copertura maggiore, poi l’identificativo minore); l'altro che, dato nome e sede di una compagnia,
+calcola il valore totale delle polizze offerte da quella compagnia in quella sede, inteso come somma dei premi annui.
+Endpoint 1:
+Metodo: GET
+URL: /polizze/{codicePolizza}/compagnia-minima
+Descrizione: Restituisce la compagnia che offre la polizza con il premio annuo più basso, risolvendo eventuali parità come da
+specifica.
+Endpoint 2:
+Metodo: GET
+URL: /compagnie/valore
+Query Params: nome={nome}&sede={sede}
+Descrizione: Restituisce il valore totale delle polizze offerte dalla compagnia con il nome e sede specificati.
+GET /polizze/{codicePolizza}/compagnia-minima
+Response Body
+json
+{
+ "codice": 101,
+ "nome": "Sicura S.p.A.",
+ "sede": "Milano",
+ "polizze": [
+ {
+ "codice": "AUTO123",
+ "premio": 320.0,
+ "copertura": 15000.0
+ },
+ {
+ "codice": "CASA456",
+ "premio": 500.0,
+ "copertura": 30000.0
+ }
+ ]
+}
+GET /compagnie/valore?nome=Sicura%20S.p.A.&sede=Milano
+Response Body
+Json {"valoreTotale": 820.0 }

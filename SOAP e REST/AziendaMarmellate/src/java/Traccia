@@ -1,0 +1,41 @@
+Realizza un Web Service RESTful per la gestione di informazioni su aziende produttrici di marmellate. Il servizio consente la
+gestione di più aziende, ciascuna delle quali produce diversi tipi di marmellate con caratteristiche specifiche. Esso espone due
+endpoint: uno che, dato l'id di un'azienda e un tipo di marmellata, consente di salvare l'importo incassato per la vendita di
+quella marmellata; l'altro che, dato l'id dell'azienda, restituisce il tipo di marmellata che ha generato il maggiore incasso totale
+insieme all'importo stesso. Il server memorizza le informazioni in una struttura dati che associa ogni azienda a una mappa dei
+tipi di marmellate e ai relativi incassi.
+
+Endpoint 1:
+Metodo: POST
+URL: /aziende/{idAzienda}/vendite
+Descrizione: Salva l'importo incassato per la vendita di una marmellata per una specifica azienda.
+
+
+Endpoint 2:
+Metodo: GET
+URL: /aziende/{idAzienda}/migliore
+Descrizione: Restituisce il tipo di marmellata con il maggiore incasso totale e il relativo importo per una specifica azienda.
+JSON - Schemi richiesti
+
+
+POST /aziende/{idAzienda}/vendite
+Request Body
+Json
+{
+ "tipoMarmellata": "fragola",
+ "importo": 123.45
+}
+Response Body
+json
+{
+ "message": "Incasso registrato con successo"
+}
+
+
+GET /aziende/{idAzienda}/migliore
+Response Body
+json
+{
+ "tipoMarmellata": "albicocca",
+ "importo": 456.78
+}

@@ -1,0 +1,65 @@
+Si realizzi un Web Service che permette di ottenere informazioni sulle polizze assicurative offerte da diverse compagnie
+assicurative. Ogni compagnia è identificata da un codice numerico univoco e è caratterizzata da un nome, una sede e un
+elenco di Polizze. Ogni polizza è identificata da un codice testuale univoco ed è caratterizzata da un premio annuo e da una
+copertura massima.
+Il servizio espone i seguenti metodi:
+
+1. Un metodo che, dato il codice di una polizza, restituisce la compagnia che offre la polizza al premio annuo più basso.
+Se più compagnie offrono la polizza al premio annuo più basso, si deve restituire la compagnia con la maggiore
+copertura massima. In caso di ulteriore parità, si deve restituire la compagnia con l'identificatore numerico più basso.
+
+
+2. Un metodo che dato il nome e la sede di una compagnia, calcola il valore totale delle polizze offerte dalla compagnia.
+Il valore totale è determinato dalla somma dei premi annuali di tutte le polizze offerte dalla compagnia in una sede
+specifica.
+
+In accordo a quanto specificato nel WSDL allegato, si implementi in Java una classe che implementa il servizio.
+
+Allegato all’esercizio
+<wsdl:definitions targetNamespace="http://www.examples.com/wsdl/AssicurazioniService">
+ <wsdl:types>
+ <schema targetNamespace="http://DefaultNamespace">
+ <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+ </complexType>
+ <complexType name="Polizza">
+ <sequence>
+ <element name="Codice" type="xsd:string"/>
+ <element name="Premio" type="xsd:double"/>
+ <element name="Copertura" type="xsd:double"/>
+ </sequence>
+ </complexType>
+ <complexType name="Compagnia">
+ <sequence>
+ <element name="Codice" type="xsd:int"/>
+ <element name="Nome" type="xsd:string"/>
+ <element name="Sede" type="xsd:string"/>
+ <element name="ListPol" type="tns:ListPol" maxOccurs="unbounded"/>
+ </sequence>
+<complexType name="ListPol">
+<sequence>
+<element name="ListPol" type="impl:Polizza" minOccurs="0" maxOccurs="ubounded"/>
+</sequence>
+</complexType>
+ </schema>
+ </wsdl:types>
+ <wsdl:message name="MinPremioPolizzaRequest">
+ <wsdl:part name="in0" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="MinPremioPolizzaResponse">
+ <wsdl:part name="in0" type="Compagnia"/>
+ </wsdl:message>
+ <wsdl:message name="ValorePolizzeRequest">
+ <wsdl:part name="in0" type="xsd:string"/>
+ <wsdl:part name="in1" type="xsd:string"/>
+ </wsdl:message>
+ <wsdl:message name="ValorePolizzeResponse">
+ <wsdl:part name="in0" type="xsd:double"/>
+ </wsdl:message>
+ <wsdl:portType name="AssicurazioniService">
+ <wsdl:operation name="MinPremioPolizza" parameterOrder="in0">
+ <wsdl:input message="impl:MinPremioPolizzaRequest" name="MinPremioPolizzaRequest" />
+ <wsdl:output message="impl:MinPremioPolizzaResponse" name="MinPremioPolizzaResponse" />
+ </wsdl:operation>
+ <wsdl:operation name="ValorePolizze" parameterOrder="in0,in1">
+ <wsdl:input message="impl:ValorePolizzeRequest" name="ValorePolizzeRequest"/>
+ <wsdl:output message="impl:ValorePolizzeResponse" name="ValorePolizzeResponse"/>

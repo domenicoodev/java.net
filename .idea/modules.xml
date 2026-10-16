@@ -2,21 +2,24 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SOAP e REST/AziendaMarmellate/AziendaMarmellate.iml" filepath="$PROJECT_DIR$/SOAP e REST/AziendaMarmellate/AziendaMarmellate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Esercizi Esame/Applicazioni di Rete/Applicazioni di Rete.iml" filepath="$PROJECT_DIR$/Esercizi Esame/Applicazioni di Rete/Applicazioni di Rete.iml" />
       <module fileurl="file://$PROJECT_DIR$/Connessione a TimeServer/Connessione a TimeServer.iml" filepath="$PROJECT_DIR$/Connessione a TimeServer/Connessione a TimeServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Download Pagina HTML/Download Pagina HTML.iml" filepath="$PROJECT_DIR$/Download Pagina HTML/Download Pagina HTML.iml" />
       <module fileurl="file://$PROJECT_DIR$/EchoServer/EchoServer.iml" filepath="$PROJECT_DIR$/EchoServer/EchoServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Esercizi Esame/Esercizi Esame.iml" filepath="$PROJECT_DIR$/Esercizi Esame/Esercizi Esame.iml" />
       <module fileurl="file://$PROJECT_DIR$/Http Server/Http Server.iml" filepath="$PROJECT_DIR$/Http Server/Http Server.iml" />
       <module fileurl="file://$PROJECT_DIR$/HttpWelcome/HttpWelcome.iml" filepath="$PROJECT_DIR$/HttpWelcome/HttpWelcome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Esercizi Esame/Applicazioni di Rete/Monitoraggio Agricolo/Monitoraggio Agricolo.iml" filepath="$PROJECT_DIR$/Esercizi Esame/Applicazioni di Rete/Monitoraggio Agricolo/Monitoraggio Agricolo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Multicast TimeServer/Multicast TimeServer.iml" filepath="$PROJECT_DIR$/Multicast TimeServer/Multicast TimeServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Recupero Contenuto Sito Web/Recupero Contenuto Sito Web.iml" filepath="$PROJECT_DIR$/Recupero Contenuto Sito Web/Recupero Contenuto Sito Web.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SOAP e REST/SOAP e REST.iml" filepath="$PROJECT_DIR$/SOAP e REST/SOAP e REST.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Esercizi Esame/SOAP e REST/SOAP e REST.iml" filepath="$PROJECT_DIR$/Esercizi Esame/SOAP e REST/SOAP e REST.iml" />
       <module fileurl="file://$PROJECT_DIR$/Socket Opener Test/Socket Opener Test.iml" filepath="$PROJECT_DIR$/Socket Opener Test/Socket Opener Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/TimeServer UDP/TimeServer UDP.iml" filepath="$PROJECT_DIR$/TimeServer UDP/TimeServer UDP.iml" />
       <module fileurl="file://$PROJECT_DIR$/TrasmissioneOggettiSerializzati/TrasmissioneOggettiSerializzati.iml" filepath="$PROJECT_DIR$/TrasmissioneOggettiSerializzati/TrasmissioneOggettiSerializzati.iml" />
       <module fileurl="file://$PROJECT_DIR$/URLConnection Test/URLConnection Test.iml" filepath="$PROJECT_DIR$/URLConnection Test/URLConnection Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/esercizi-reti.iml" filepath="$PROJECT_DIR$/esercizi-reti.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SOAP e REST/NegoziMusica/esercizi-reti (1).iml" filepath="$PROJECT_DIR$/SOAP e REST/NegoziMusica/esercizi-reti (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Esercizi Esame/SOAP e REST/CompagnieAssicurative/esercizi-reti (1).iml" filepath="$PROJECT_DIR$/Esercizi Esame/SOAP e REST/CompagnieAssicurative/esercizi-reti (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Esercizi Esame/SOAP e REST/NegoziMusica/esercizi-reti (2).iml" filepath="$PROJECT_DIR$/Esercizi Esame/SOAP e REST/NegoziMusica/esercizi-reti (2).iml" />
     </modules>
   </component>
 </project>

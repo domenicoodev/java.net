@@ -1,0 +1,84 @@
+20240317 - Monitoraggio agricolo
+
+Traccia”
+
+Esame di Reti di Calcolatori - Prova scritta del 14 marzo 2024 - Seconda Parte
+
+Esercizio 2 - Fino a 15 punti
+
+Si vuole realizzare un'applicazione di rete in Java per il monitoraggio agricolo utilizzando sensori, cioe N Client distribuiti su un campo agricolo, e un Server centrale che raccoglie, elabora e visualizza i dati generati. I sensori generano periodicamente un oggetto StatoSensore contenente id del sensore, numero progressivo assegnato dal Server e misure ambientali: temperatura dell'aria e umidita del suolo.
+
+Il Server riceve un oggetto StatoSensore sulla porta TCP 3000 e lo memorizza in una struttura dati. I client possono inviare aggiornamenti solo dalle ore 8 alle ore 13. Fuori orario ricevono un messaggio di rifiuto; altrimenti il Server effettua i controlli e restituisce un messaggio di accettazione con il numero progressivo assegnato.
+
+Ogni StatoSensore viene rifiutato se valgono insieme queste condizioni: l'umidita del suolo e uguale alla media dei valori di umidita ricevuti dallo stesso sensore con variazione massima del +/-5%; la temperatura dell'aria e uguale alla media globale delle temperature precedentemente inviate da tutti i sensori con variazione massima del +/-5%.
+
+I sensori possono registrarsi a un servizio di notificazione giornaliera inviando una richiesta TCP sulla porta 4000. Ogni volta che viene salvato un nuovo stato di un sensore diverso, il Server invia un messaggio UDP sulla porta 4000 del client con formato ID_SENSORE#NUM_PROGRESSIVO#MISURE.
+
+Il Server deve gestire piu client contemporaneamente. Si realizzino una classe Server, una classe Sensore e due main: uno per avviare il Server con hostname agricoltura.dimes.unical.it e uno per avviare un Sensore che invia lo stato, si registra al servizio di notifica e attende notifiche.
+
+Scelte implementative
+
+La soluzione usa un thread per le richieste TCP 3000 e un thread separato per le registrazioni TCP 4000.
+
+La classe ArchivioStati contiene HashMap e LinkedList e protegge ogni accesso con metodi synchronized.
+
+StatoSensore e RispostaServer implementano Serializable, cosi possono essere inviati con ObjectOutputStream.
+
+Per questa traccia non serve WSDL: la comunicazione e tramite socket TCP e UDP.
+
+File della soluzione Java
+
+File
+
+Contenuto
+
+StatoSensore.java
+
+Classe Java della soluzione
+
+RispostaServer.java
+
+Classe Java della soluzione
+
+Sottoscrizione.java
+
+Classe Java della soluzione
+
+ArchivioStati.java
+
+Classe Java della soluzione
+
+Server.java
+
+Classe Java della soluzione
+
+ThreadRegistrazioni.java
+
+Classe Java della soluzione
+
+ThreadRegistrazioneSingola.java
+
+Classe Java della soluzione
+
+ThreadStatoSensore.java
+
+Classe Java della soluzione
+
+Sensore.java
+
+Classe Java della soluzione
+
+ThreadRicezioneNotifiche.java
+
+Classe Java della soluzione
+
+MainServer.java
+
+Classe Java della soluzione
+
+MainSensore.java
+
+Classe Java della soluzione
+
+Compilazione: mettere i file della singola traccia nella stessa cartella ed eseguire javac *.java.
+Per test locale sostituire l'hostname della traccia con localhost quando necessario.

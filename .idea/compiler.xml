@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="esercizi-reti (2)" />
         <module name="esercizi-reti" />
         <module name="esercizi-reti (1)" />
       </profile>
@@ -15,6 +16,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="esercizi-reti" options="-parameters" />
       <module name="esercizi-reti (1)" options="-parameters" />
+      <module name="esercizi-reti (2)" options="-parameters" />
     </option>
   </component>
 </project>

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/SOAP e REST/AziendaMarmellate/AziendaMarmellate.iml" filepath="$PROJECT_DIR$/SOAP e REST/AziendaMarmellate/AziendaMarmellate.iml" />
       <module fileurl="file://$PROJECT_DIR$/Connessione a TimeServer/Connessione a TimeServer.iml" filepath="$PROJECT_DIR$/Connessione a TimeServer/Connessione a TimeServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Download Pagina HTML/Download Pagina HTML.iml" filepath="$PROJECT_DIR$/Download Pagina HTML/Download Pagina HTML.iml" />
       <module fileurl="file://$PROJECT_DIR$/EchoServer/EchoServer.iml" filepath="$PROJECT_DIR$/EchoServer/EchoServer.iml" />
@@ -15,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/TrasmissioneOggettiSerializzati/TrasmissioneOggettiSerializzati.iml" filepath="$PROJECT_DIR$/TrasmissioneOggettiSerializzati/TrasmissioneOggettiSerializzati.iml" />
       <module fileurl="file://$PROJECT_DIR$/URLConnection Test/URLConnection Test.iml" filepath="$PROJECT_DIR$/URLConnection Test/URLConnection Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/esercizi-reti.iml" filepath="$PROJECT_DIR$/esercizi-reti.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SOAP e REST/NegoziMusica/esercizi-reti (1).iml" filepath="$PROJECT_DIR$/SOAP e REST/NegoziMusica/esercizi-reti (1).iml" />
     </modules>
   </component>
 </project>
